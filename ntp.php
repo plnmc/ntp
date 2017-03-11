@@ -4,7 +4,6 @@ date_default_timezone_set("Asia/Novosibirsk");
 function query_time_server ($timeserver, $socket)
 {
     $fp = fsockopen($timeserver,$socket,$err,$errstr,5);
-        # parameters: server, socket, error code, error text, timeout
     if($fp)
     {
         fputs($fp, "\n");
