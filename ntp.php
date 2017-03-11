@@ -1,7 +1,6 @@
 <?php
 date_default_timezone_set("Asia/Novosibirsk");
 
-/* Query a time server (C) 1999-09-29, Ralf D. Kloth (QRQ.software) <ralf at qrq.de> */
 function query_time_server ($timeserver, $socket)
 {
     $fp = fsockopen($timeserver,$socket,$err,$errstr,5);
